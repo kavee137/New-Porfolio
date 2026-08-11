@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -11,22 +11,17 @@ import DesignUiUx from './components/DesignUiUx';
 import Stats from './components/Stats';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import ProjectModal from './components/ProjectModal';
-import CvModal from './components/CvModal';
 
 export default function App() {
-  const [selectedProject, setSelectedProject] = useState(null);
-  const [isCvModalOpen, setIsCvModalOpen] = useState(false);
-
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans antialiased selection:bg-indigo-500 selection:text-white">
-      {/* Top Navbar */}
-      <Navbar onOpenCvModal={() => setIsCvModalOpen(true)} />
+      {/* Top Navbar with direct CV Download */}
+      <Navbar />
 
       {/* Main Content Sections */}
       <main>
         {/* Hero Section */}
-        <Hero onOpenCvModal={() => setIsCvModalOpen(true)} />
+        <Hero />
 
         {/* About Section */}
         <About />
@@ -34,8 +29,8 @@ export default function App() {
         {/* Technology Stack Section */}
         <TechStack />
 
-        {/* Featured Projects Section */}
-        <Projects onSelectProject={(project) => setSelectedProject(project)} />
+        {/* Featured Projects & Play Store Apps */}
+        <Projects />
 
         {/* Web + Mobile Development Showcase */}
         <WebMobileShowcase />
@@ -58,17 +53,6 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
-
-      {/* Modals */}
-      <ProjectModal
-        project={selectedProject}
-        onClose={() => setSelectedProject(null)}
-      />
-
-      <CvModal
-        isOpen={isCvModalOpen}
-        onClose={() => setIsCvModalOpen(false)}
-      />
     </div>
   );
 }

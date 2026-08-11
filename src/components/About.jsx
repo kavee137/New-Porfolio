@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Globe, Smartphone, Layout, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Globe, Smartphone, Layout, CheckCircle2 } from 'lucide-react';
 import { personalInfo, aboutHighlights, focusAreas } from '../data/portfolioData';
 
 const iconMap = {
@@ -73,7 +73,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="lg:col-span-6 grid grid-cols-1 gap-5"
           >
-            {aboutHighlights.map((item, index) => {
+            {aboutHighlights.map((item) => {
               const IconComponent = iconMap[item.icon] || Globe;
               return (
                 <div

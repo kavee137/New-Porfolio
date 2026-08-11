@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Layers, Palette, Layout, Sparkles, CheckCircle2, Eye, MousePointer2 } from 'lucide-react';
+import { Layers, Sparkles, MousePointer2 } from 'lucide-react';
 import { FigmaIcon } from './Icons';
 import { uiuxDesignTokens } from '../data/portfolioData';
 

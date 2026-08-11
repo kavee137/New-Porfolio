@@ -1,26 +1,31 @@
+import cvPdf from '../assets/MobileDeveloper.pdf';
+
 export const personalInfo = {
   name: "Kaveesha Rukshan",
-  role: "Frontend Engineer",
-  title: "Frontend Engineer | Web & Mobile Developer",
-  specialization: "Web & Mobile Frontend Development",
-  headline: "Frontend Engineer building clean, scalable & engaging digital experiences.",
-  bio: "I’m Kaveesha Rukshan, a frontend engineer focused on building modern web and mobile applications using React, React Native and modern frontend technologies.",
-  aboutDetailed: "I'm a passionate Frontend Engineer who enjoys transforming ideas and designs into responsive, user-friendly digital products. I specialize in React-based web applications and React Native mobile applications, with a strong focus on clean UI, performance, maintainability, and great user experience.",
-  availabilityBadge: "Available for Frontend Opportunities",
-  location: "Sri Lanka",
+  role: "Mobile Application Developer & Frontend Engineer",
+  title: "Undergraduate | BSc(Hons) in Computer Science",
+  specialization: "React Native Mobile & Frontend Development",
+  headline: "Mobile Application Developer building scalable, real-world digital experiences.",
+  bio: "A motivated and enthusiastic Mobile Application Developer currently pursuing BSc(Hons) in Computer Science, with hands-on industry experience in React Native mobile application development. Experienced in building and deploying real-world mobile applications to the Google Play Store.",
+  aboutDetailed: "A motivated and enthusiastic Mobile Application Developer currently pursuing BSc(Hons) in Computer Science, with six months of hands-on industry experience in React Native mobile application development. Experienced in building and deploying real-world mobile applications. Eager to further enhance technical skills while contributing to impactful projects in a collaborative environment.",
+  availabilityBadge: "Available for Opportunities",
+  location: "Mathugama, Sri Lanka",
+  phone: "+94705879156",
+  cvPdf: cvPdf,
   socials: {
     github: "https://github.com/kavee137",
-    linkedin: "https://linkedin.com/in/kaveesha-rukshan",
-    email: "kaveesharukshan137@gmail.com"
+    linkedin: "https://linkedin.com/in/kaveesha-rukshan/",
+    email: "kaveesharukshan137@gmail.com",
+    playConsole: "https://play.google.com/store/apps/dev?id=8535787029159101193"
   },
   devCardSnippet: {
-    tag: "<Frontend Engineer />",
-    skills: ["React", "React Native", "JavaScript", "TypeScript"],
+    tag: "<Mobile & Frontend Dev />",
+    skills: ["React Native", "Expo", "TypeScript", "JavaScript", "Firebase"],
     code: `const developer = {
   name: "Kaveesha Rukshan",
-  passion: "building products",
-  focus: "user experience",
-  stack: ["Web", "Mobile"],
+  role: "Mobile App Developer",
+  focus: "React Native & Expo",
+  platforms: ["Android", "iOS", "Web"],
   status: "ready_to_build"
 };`
   }
@@ -28,271 +33,257 @@ export const personalInfo = {
 
 export const aboutHighlights = [
   {
-    id: "web",
-    icon: "Globe",
-    title: "Web Development",
-    description: "Building modern, high-performance, and responsive web applications with clean component architecture."
-  },
-  {
     id: "mobile",
     icon: "Smartphone",
-    title: "Mobile Development",
-    description: "Creating smooth cross-platform mobile experiences for iOS and Android using React Native & Expo."
+    title: "Mobile Application Development",
+    description: "Developing and deploying cross-platform mobile applications using React Native, Expo, and Firebase with Google Play publishing experience."
+  },
+  {
+    id: "web",
+    icon: "Globe",
+    title: "Web & Frontend Engineering",
+    description: "Building responsive, modern, and high-performance web applications using React, TypeScript, and Tailwind CSS."
   },
   {
     id: "uiux",
     icon: "Layout",
-    title: "UI/UX & Design",
-    description: "Designing intuitive, accessible user interfaces with precise typography, spacing, and micro-interactions."
+    title: "UI/UX Design",
+    description: "Designing intuitive and user-friendly mobile application interfaces with modern UI/UX principles, wireframing, and Figma."
   }
 ];
 
 export const focusAreas = [
-  "Web Applications",
-  "Mobile Applications",
-  "UI/UX Design",
-  "API Integration",
-  "Authentication",
-  "Responsive Design"
+  "React Native Apps",
+  "Expo & EAS Build",
+  "Google Play Console",
+  "Firebase & Cloud APIs",
+  "UI/UX Mobile Design",
+  "AdMob Monetization"
 ];
 
 export const techStackCategories = [
   { id: "all", label: "All" },
-  { id: "frontend", label: "Frontend" },
   { id: "mobile", label: "Mobile" },
-  { id: "backend", label: "Backend & APIs" },
-  { id: "database", label: "Database" },
-  { id: "tools", label: "Tools" },
-  { id: "other", label: "Other" }
+  { id: "languages", label: "Languages" },
+  { id: "frameworks", label: "Frameworks & Libraries" },
+  { id: "cloud", label: "Cloud & Version Control" },
+  { id: "design", label: "UI/UX & Tools" }
 ];
 
 export const techStack = [
-  // Frontend
-  { name: "React", category: "frontend", iconName: "Atom", level: "Expert" },
-  { name: "JavaScript", category: "frontend", iconName: "Code2", level: "Expert" },
-  { name: "TypeScript", category: "frontend", iconName: "FileCode2", level: "Advanced" },
-  { name: "HTML5", category: "frontend", iconName: "Globe", level: "Expert" },
-  { name: "CSS3", category: "frontend", iconName: "Palette", level: "Expert" },
-  { name: "Tailwind CSS", category: "frontend", iconName: "Sparkles", level: "Expert" },
-  { name: "Bootstrap", category: "frontend", iconName: "LayoutGrid", level: "Advanced" },
-
-  // Mobile
+  // Mobile & Frameworks
   { name: "React Native", category: "mobile", iconName: "Smartphone", level: "Expert" },
   { name: "Expo", category: "mobile", iconName: "Zap", level: "Expert" },
+  { name: "ReactJS", category: "frameworks", iconName: "Atom", level: "Expert" },
+  { name: "Redux", category: "frameworks", iconName: "Layers", level: "Advanced" },
+  { name: "Context API", category: "frameworks", iconName: "Repeat", level: "Expert" },
+  { name: "EAS Build", category: "mobile", iconName: "Terminal", level: "Advanced" },
+  { name: "Android Studio", category: "mobile", iconName: "Smartphone", level: "Advanced" },
+  { name: "Xcode", category: "mobile", iconName: "Smartphone", level: "Intermediate" },
 
-  // Backend & APIs
-  { name: "Java", category: "backend", iconName: "Coffee", level: "Intermediate" },
-  { name: "Spring Boot", category: "backend", iconName: "Server", level: "Intermediate" },
-  { name: "REST APIs", category: "backend", iconName: "ArrowRightLeft", level: "Advanced" },
-  { name: "JWT", category: "backend", iconName: "KeyRound", level: "Advanced" },
-  { name: "JSON", category: "backend", iconName: "FileJson", level: "Expert" },
+  // Languages
+  { name: "TypeScript", category: "languages", iconName: "FileCode2", level: "Advanced" },
+  { name: "JavaScript", category: "languages", iconName: "Code2", level: "Expert" },
+  { name: "Java", category: "languages", iconName: "Coffee", level: "Intermediate" },
+  { name: "HTML5", category: "languages", iconName: "Globe", level: "Expert" },
+  { name: "CSS3", category: "languages", iconName: "Palette", level: "Expert" },
+  { name: "Nativewind", category: "languages", iconName: "Sparkles", level: "Advanced" },
+  { name: "SQL", category: "languages", iconName: "Database", level: "Intermediate" },
 
-  // Database
-  { name: "MySQL", category: "database", iconName: "Database", level: "Intermediate" },
-  { name: "Firebase", category: "database", iconName: "Flame", level: "Advanced" },
+  // Cloud, Platforms & OS
+  { name: "Firebase", category: "cloud", iconName: "Flame", level: "Advanced" },
+  { name: "Google AdMob", category: "cloud", iconName: "Megaphone", level: "Advanced" },
+  { name: "Google Play Console", category: "cloud", iconName: "Smartphone", level: "Expert" },
+  { name: "GCP", category: "cloud", iconName: "Server", level: "Intermediate" },
+  { name: "Git", category: "cloud", iconName: "GitBranch", level: "Advanced" },
+  { name: "GitHub", category: "cloud", iconName: "Github", level: "Advanced" },
 
-  // Tools
-  { name: "Git", category: "tools", iconName: "GitBranch", level: "Advanced" },
-  { name: "GitHub", category: "tools", iconName: "Github", level: "Advanced" },
-  { name: "Figma", category: "tools", iconName: "Figma", level: "Advanced" },
-  { name: "Postman", category: "tools", iconName: "Send", level: "Advanced" },
-  { name: "IntelliJ IDEA", category: "tools", iconName: "Terminal", level: "Intermediate" },
-  { name: "VS Code", category: "tools", iconName: "Code", level: "Expert" },
-
-  // Other
-  { name: "AdMob", category: "other", iconName: "Megaphone", level: "Advanced" },
-  { name: "Firebase Authentication", category: "other", iconName: "ShieldCheck", level: "Advanced" },
-  { name: "Firebase Firestore", category: "other", iconName: "Layers", level: "Advanced" },
-  { name: "ModelMapper", category: "other", iconName: "Repeat", level: "Intermediate" },
-  { name: "Hibernate", category: "other", iconName: "Cpu", level: "Intermediate" }
+  // Tools & Design
+  { name: "Figma", category: "design", iconName: "Figma", level: "Advanced" },
+  { name: "Tailwind CSS", category: "design", iconName: "Sparkles", level: "Expert" },
+  { name: "API Integration", category: "frameworks", iconName: "ArrowRightLeft", level: "Expert" },
+  { name: "VS Code", category: "design", iconName: "Code", level: "Expert" }
 ];
 
 export const projects = [
   {
-    id: "ai-dog-identifier",
-    title: "AI Dog Breed Identifier",
-    tag: "AI / Mobile App",
-    category: "mobile",
-    description: "AI-powered mobile application that identifies dog breeds instantly using artificial intelligence and camera recognition.",
-    fullDescription: "AI Dog Breed Identifier is a cutting-edge mobile application designed to identify dog breeds in real time. Powered by Google's Gemini Vision API and built with React Native & Expo, it delivers high-accuracy breed recognition, detailed physical trait summaries, care guidelines, temperament insights, and monetized ad integration.",
-    technologies: ["React Native", "Expo", "Gemini API", "Tailwind CSS", "AdMob"],
-    features: [
-      "Real-time AI camera scanning & gallery photo upload",
-      "Comprehensive breed profiles & care recommendations",
-      "Scanned breed history & favorite bookmarks",
-      "Monetized using Google AdMob banner & interstitial ads"
-    ],
-    github: "https://github.com/kavee137",
-    liveUrl: "https://github.com/kavee137",
-    playStore: "https://play.google.com/store",
-    accentColor: "indigo",
-    badgeType: "Featured Mobile"
-  },
-  {
     id: "cloud-attend",
-    title: "Cloud Attend",
-    tag: "Mobile App",
+    title: "Cloud Attend - QR Attendance App",
+    tag: "Mobile App • Play Store",
     category: "mobile",
-    description: "A mobile attendance management application designed to simplify attendance tracking, reporting, and staff management.",
-    fullDescription: "Cloud Attend is a streamlined mobile solution built for organizations to monitor attendance effortlessly. Featuring real-time Firebase syncing, employee check-in/check-out logs, automated monthly reporting, and AdMob integration, Cloud Attend eliminates manual paperwork.",
-    technologies: ["React Native", "Firebase", "AdMob"],
-    features: [
-      "One-tap employee check-in and check-out tracking",
-      "Real-time Firebase Cloud Firestore data sync",
-      "Automated attendance logs & summary reports",
-      "AdMob integration for ad monetization"
-    ],
+    description: "Successfully deployed and published on Google Play Store. Built with React Native, TypeScript, Expo, Google AdMob, Firebase Authentication, QR code–based attendance, and emailJS.",
+    technologies: ["React Native", "TypeScript", "Expo", "AdMob", "Firebase", "QR Code", "EmailJS"],
     github: "https://github.com/kavee137",
-    playStore: "https://play.google.com/store",
-    buttonText: "View on Google Play",
-    accentColor: "blue",
-    badgeType: "Google Play App"
+    playStore: "https://play.google.com/store/apps/dev?id=8535787029159101193",
+    badgeType: "Google Play Store",
+    accentColor: "blue"
   },
   {
-    id: "live-bus-tracking",
-    title: "Live Bus Tracking Application",
-    tag: "Mobile App",
+    id: "calq-calculator",
+    title: "CalQ - Simple Calculator App",
+    tag: "Mobile App • Play Store",
     category: "mobile",
-    description: "A mobile application that allows users to track buses in real-time and access live transportation info and schedules.",
-    fullDescription: "Live Bus Tracking Application empowers commuters with real-time transit awareness. Built with React Native, Firebase, and custom geolocation REST APIs, commuters can view live bus positions on interactive maps, calculate accurate ETA arrival predictions, and receive route updates.",
-    technologies: ["React Native", "Firebase", "REST API"],
-    features: [
-      "Live GPS location mapping for active public buses",
-      "Estimated time of arrival (ETA) calculation engine",
-      "Route search & bus stop bookmarking",
-      "Push alerts for delays and schedule changes"
-    ],
+    description: "Published on the Google Play Store. Built using React Native, TypeScript, Expo, and TailwindCSS, supporting core arithmetic operations including addition, subtraction, multiplication, and division.",
+    technologies: ["React Native", "TypeScript", "Expo", "TailwindCSS"],
+    github: "https://github.com/kavee137",
+    playStore: "https://play.google.com/store/apps/dev?id=8535787029159101193",
+    badgeType: "Google Play Store",
+    accentColor: "emerald"
+  },
+  {
+    id: "naviq-bus-tracking",
+    title: "NaviQ - Bus Tracking App",
+    tag: "Mobile App • APK",
+    category: "mobile",
+    description: "Real-time bus tracking mobile app with Firebase synchronization and live GPS updates. Features interactive map visualization to display live bus routes, location ETA, and seamless user experience.",
+    technologies: ["React Native", "TypeScript", "Expo", "Tailwind CSS", "Firebase", "GPS Mapping"],
     github: "https://github.com/kavee137",
     liveUrl: "https://github.com/kavee137",
-    accentColor: "sky",
-    badgeType: "Transit App"
+    badgeType: "Live Bus Tracking",
+    accentColor: "sky"
+  },
+  {
+    id: "ai-dog-identifier",
+    title: "Dog Breed Identifier — AI Identify App",
+    tag: "AI Mobile App • Ongoing",
+    category: "mobile",
+    description: "React Native mobile application that identifies dog breeds using Google Gemini API with AI-powered image analysis. Integrated Google AdMob for in-app advertising and responsive modern UI.",
+    technologies: ["React Native", "Gemini API", "AdMob", "Tailwind CSS", "Expo"],
+    github: "https://github.com/kavee137",
+    liveUrl: "https://github.com/kavee137",
+    badgeType: "AI Vision App",
+    accentColor: "indigo"
   },
   {
     id: "classified-ads-platform",
     title: "Classified Ads Platform",
     tag: "Fullstack Web",
     category: "web",
-    description: "A modern classified advertisement platform inspired by marketplace applications, designed for Sri Lankan users.",
-    fullDescription: "Classified Ads Platform is a full-stack e-commerce marketplace built specifically for Sri Lankan buyers and sellers. It features robust backend authentication with Spring Boot and JWT, Hibernate ORM data access, dynamic location filters, multi-image upload workflows, user messaging, and a responsive React frontend interface.",
-    technologies: ["Spring Boot", "Hibernate", "MySQL", "JWT", "React"],
-    features: [
-      "Secure JWT user registration, login & session handling",
-      "Comprehensive ad creation, edit, renewal & deletion lifecycle",
-      "Hierarchical categories, Sri Lankan district & city filters",
-      "Multi-image file upload & Cloud storage integration",
-      "Saved favorite ads & saved filter alerts",
-      "Direct buyer-to-seller messaging portal"
-    ],
+    description: "A full-stack e-commerce marketplace with Spring Boot backend, JWT authentication, Hibernate ORM data access, MySQL database, multi-image upload workflows, and responsive React UI.",
+    technologies: ["Spring Boot", "React", "Hibernate", "MySQL", "JWT"],
     github: "https://github.com/kavee137",
     liveUrl: "https://github.com/kavee137",
-    accentColor: "violet",
-    badgeType: "Fullstack Web"
-  },
-  {
-    id: "tailor-shop-management",
-    title: "Tailor Shop Management System",
-    tag: "Desktop System",
-    category: "fullstack",
-    description: "A desktop management system designed to manage tailoring customers, custom orders, payments, and business operations.",
-    fullDescription: "Tailor Shop Management System is a specialized desktop ERP application created with Java, JavaFX, and MySQL. It empowers tailoring businesses to catalog customer body measurements, manage garment order pipelines, track payment installments, and print professional customer receipts using JasperReports.",
-    technologies: ["Java", "JavaFX", "MySQL", "JasperReports"],
-    features: [
-      "Customer body measurement database & historical logs",
-      "Custom order status tracking (Received, Stitching, Trial, Ready)",
-      "Payment processing & invoice printing via JasperReports",
-      "Material inventory monitoring & revenue summaries"
-    ],
-    github: "https://github.com/kavee137",
-    liveUrl: "https://github.com/kavee137",
-    accentColor: "emerald",
-    badgeType: "Desktop ERP"
+    badgeType: "Fullstack Web",
+    accentColor: "violet"
   }
 ];
 
 export const whatIBring = [
   {
-    title: "Clean Code",
-    description: "Writing maintainable, reusable, and scalable frontend code following industry best practices and design patterns.",
-    icon: "Code2"
+    title: "Mobile Architecture",
+    description: "Developing cross-platform mobile applications using React Native and Expo with clean state management and modular architecture.",
+    icon: "Smartphone"
   },
   {
-    title: "Responsive Design",
-    description: "Creating fluid interfaces that adapt seamlessly across mobile phones, tablets, laptops, and ultra-wide displays.",
-    icon: "MonitorSmart"
-  },
-  {
-    title: "API Integration",
-    description: "Connecting frontend UIs with RESTful APIs, JSON data schemas, Firebase backend services, and JWT authentication.",
+    title: "Play Store Deployment",
+    description: "Hands-on experience publishing mobile applications to the Google Play Store, managing release tracks, and analyzing metrics.",
     icon: "Workflow"
   },
   {
-    title: "UI/UX Focus",
-    description: "Translating wireframes and Figma designs into pixel-perfect, intuitive, and visually pleasing user experiences.",
+    title: "UI/UX & Design",
+    description: "Designing intuitive, user-friendly mobile interfaces in Figma and implementing them into pixel-perfect responsive code.",
     icon: "Sparkles"
   },
   {
-    title: "Problem Solving",
-    description: "Deconstructing complex technical challenges into modular, practical, and efficient software solutions.",
-    icon: "Lightbulb"
+    title: "API & Cloud Sync",
+    description: "Integrating RESTful APIs, Firebase Authentication, Cloud Firestore real-time synchronization, and emailJS.",
+    icon: "Zap"
   },
   {
-    title: "Performance",
-    description: "Building lightweight, lightning-fast web and mobile apps optimized for low latency and smooth animations.",
-    icon: "Zap"
+    title: "Clean Code & Performance",
+    description: "Writing maintainable, readable, and typed code using TypeScript and industry best practices for smooth performance.",
+    icon: "Code2"
+  },
+  {
+    title: "Monetization & Tools",
+    description: "Integrating Google AdMob ads, analytics, Git/GitHub version workflows, Android Studio, and Expo Application Services (EAS).",
+    icon: "Lightbulb"
   }
 ];
 
 export const experienceTimeline = [
   {
-    role: "Associate Frontend Engineer (Web & Mobile)",
-    type: "Port City BPO (200M)",
-    period: "Sep 2026 – Present",
-    description: "Engaged in hands-on web and mobile frontend engineering projects, focusing on responsive web applications, cross-platform mobile development, clean UI engineering, API integration, and seamless user experiences.",
+    role: "Mobile App Developer Intern",
+    company: "Cybernetic Technologies Pvt Ltd",
+    type: "Onsite",
+    location: "Battaramulla, Sri Lanka",
+    period: "09/2025 - 02/2026",
+    description: "Developed and maintained cross-platform mobile applications using React Native and Expo, focusing on responsive UI, smooth user experiences, and efficient application performance.",
     highlights: [
-      "Developed responsive web interfaces and cross-platform mobile application features using React and React Native.",
-      "Built reusable and customizable UI components based on Figma designs and project requirements.",
-      "Integrated RESTful APIs, Firebase Authentication, and Cloud Firestore across web and mobile applications.",
-      "Implemented responsive layouts and optimized user interfaces for different screen sizes and devices.",
-      "Utilized Git & GitHub for feature branching, collaborative development, commit workflows, and version management.",
-      "Assisted in testing, debugging, performance optimization, and resolving frontend issues across web and mobile platforms."
+      "Developed and maintained cross-platform mobile applications using React Native and Expo.",
+      "Focused on building responsive UI, smooth animations, and optimized application performance.",
+      "Collaborated onsite with senior engineers on mobile feature delivery and API integrations."
     ],
-    tech: [
-      "React",
-      "React Native",
-      "Expo",
-      "JavaScript",
-      "Tailwind CSS",
-      "REST APIs",
-      "Firebase",
-      "Git",
-      "GitHub"
-    ]
+    tech: ["React Native", "Expo", "TypeScript", "JavaScript", "Firebase", "Git", "GitHub"]
   },
   {
-    role: "React Native Mobile Developer Intern",
-    type: "Cybernetic Technologies (Pvt) Ltd",
-    period: "Recent / Practical Experience",
-    description: "Engaged in hands-on frontend and mobile engineering projects focusing on cross-platform application development and clean UI engineering.",
+    role: "Google Play Console Management & App Publishing",
+    company: "Personal Developer Account",
+    type: "Independent",
+    location: "Online",
+    period: "2022 - Present",
+    description: "Own and manage a Google Play Console account for publishing mobile applications, handling app releases, updates, and monitoring performance analytics.",
     highlights: [
-      "Developed mobile application features using React Native and Expo based on mockups.",
-      "Integrated RESTful APIs, Firebase Authentication, and Cloud Firestore databases.",
-      "Utilized Git & GitHub for feature branching, commit workflows, and version management.",
-      "Implemented responsive layouts and customizable UI components for mobile and web views.",
-      "Assisted in testing, debugging, and optimizing app performance and load times."
+      "Successfully built, tested, and published standalone mobile applications to Google Play Store.",
+      "Handled APK/AAB bundle signing, store listings, privacy policies, and release tracks.",
+      "Monitored app analytics, user feedback, and rolling out updates."
     ],
-    tech: ["React Native", "Expo", "REST APIs", "Firebase", "Git", "GitHub", "JavaScript", "Tailwind CSS"]
+    tech: ["Google Play Console", "React Native", "Expo EAS", "Google AdMob", "Android Studio"]
+  },
+  {
+    role: "UI/UX Designer",
+    company: "Freelance / Projects",
+    type: "Design",
+    location: "Sri Lanka",
+    period: "2022 - Present",
+    description: "Specialized in designing intuitive and user-friendly mobile application interfaces using modern UI/UX principles. Focused on creating responsive, visually appealing designs that enhance user experience and usability.",
+    highlights: [
+      "Created wireframes, interactive prototypes, and modern UI mockups in Figma.",
+      "Engineered design systems with consistent typography, spacing, and color tokens.",
+      "Bridged design and implementation seamlessly in React Native and React."
+    ],
+    tech: ["Figma", "UI/UX Design", "Wireframing", "Prototyping", "Design Systems"]
+  }
+];
+
+export const educationList = [
+  {
+    degree: "BSc (Hons) in Computer Science (topup)",
+    institution: "London Metropolitan University",
+    campus: "Next Campus, Colombo 10",
+    period: "06/2026 - 2027"
+  },
+  {
+    degree: "HND in Software Engineering",
+    institution: "IJSE - Institute of Software Engineering",
+    campus: "50B Grace Peiris Rd, Panadura",
+    period: "08/2023 - 06/2026"
+  },
+  {
+    degree: "Advanced Level, Commerce",
+    institution: "Mihindu National College",
+    campus: "Agalawatta",
+    period: "2014 - 2022"
+  }
+];
+
+export const achievements = [
+  {
+    title: "1st Place Winner — TeaTune AI",
+    description: "Achieved 1st Place with project BlueField Tea factory Management system featuring the innovative AI solution TeaTune AI.",
+    badge: "1st Place Award"
   }
 ];
 
 export const uiuxDesignTokens = {
   title: "Design Meets Development",
-  subtitle: "I also have a strong interest in UI/UX design and enjoy converting ideas and Figma designs into polished, functional interfaces.",
+  subtitle: "Specialized in designing intuitive and user-friendly mobile application interfaces using modern UI/UX principles.",
   tools: ["Figma", "Mobile UI", "Responsive Design", "Wireframing", "Design Systems"]
 };
 
 export const stats = [
   { label: "Development Experience", value: 2, suffix: "+ years" },
-  { label: "Projects Built", value: 5, suffix: "+" },
-  { label: "Platforms — Web & Mobile", value: 2, suffix: "" },
-  { label: "Technologies Mastered", value: 10, suffix: "+" }
+  { label: "Apps on Play Store", value: 2, suffix: " Published" },
+  { label: "Platforms — Mobile & Web", value: 2, suffix: "" },
+  { label: "Core Technologies", value: 12, suffix: "+" }
 ];

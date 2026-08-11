@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Globe, Smartphone, Check, Sparkles, Layout, ShieldCheck, Terminal, Cpu } from 'lucide-react';
+import { Globe, Smartphone, Check } from 'lucide-react';
 
 export default function WebMobileShowcase() {
   return (

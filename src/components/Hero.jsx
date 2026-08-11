@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, ArrowDown, FileText, Sparkles, CheckCircle2, Terminal, Code2, Cpu, Smartphone } from 'lucide-react';
+import { Mail, ArrowDown, Download, Sparkles, CheckCircle2, Terminal, Code2, Smartphone } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 import { personalInfo } from '../data/portfolioData';
 
-export default function Hero({ onOpenCvModal }) {
+export default function Hero() {
   const scrollToProjects = (e) => {
     e.preventDefault();
     const projectsSec = document.getElementById('projects');
@@ -41,11 +41,11 @@ export default function Hero({ onOpenCvModal }) {
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12] mb-6">
-              Frontend Engineer building{' '}
+              Mobile App Developer &{' '}
               <span className="bg-gradient-to-r from-indigo-600 via-indigo-700 to-blue-600 bg-clip-text text-transparent">
-                clean, scalable & engaging
+                Frontend Engineer
               </span>{' '}
-              digital experiences.
+              building real-world applications.
             </h1>
 
             {/* Supporting Paragraph */}
@@ -53,24 +53,27 @@ export default function Hero({ onOpenCvModal }) {
               {personalInfo.bio}
             </p>
 
-            {/* CTA Action Buttons */}
+            {/* CTA Action Buttons - Direct CV Download */}
             <div className="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto">
               <a
                 href="#projects"
                 onClick={scrollToProjects}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-base shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/35 transition-all duration-200 hover:-translate-y-0.5"
               >
-                <span>View My Work</span>
+                <span>View Projects</span>
                 <ArrowDown className="w-4 h-4" />
               </a>
 
-              <button
-                onClick={onOpenCvModal}
+              <a
+                href={personalInfo.cvPdf}
+                download="MobileDeveloper.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-base border border-slate-200 shadow-xs hover:border-slate-300 transition-all duration-200 hover:-translate-y-0.5"
               >
-                <FileText className="w-4 h-4 text-indigo-600" />
+                <Download className="w-4 h-4 text-indigo-600" />
                 <span>Download CV</span>
-              </button>
+              </a>
             </div>
 
             {/* Social Links Bar */}
@@ -128,14 +131,14 @@ export default function Hero({ onOpenCvModal }) {
                 </div>
                 <div className="flex items-center gap-1.5 px-3 py-1 rounded-md bg-slate-100 text-[11px] font-mono font-medium text-slate-600">
                   <Terminal className="w-3.5 h-3.5 text-indigo-600" />
-                  <span>developer.config.ts</span>
+                  <span>kaveesha.dev.ts</span>
                 </div>
                 <div className="w-12"></div>
               </div>
 
               {/* Developer Tag Banner */}
               <div className="mb-5 inline-block px-3 py-1.5 rounded-lg bg-indigo-50 border border-indigo-100 text-indigo-700 font-mono font-bold text-sm">
-                &lt;Frontend Engineer /&gt;
+                &lt;React Native & Frontend Developer /&gt;
               </div>
 
               {/* Tech Stack Pills Badge */}
@@ -153,16 +156,16 @@ export default function Hero({ onOpenCvModal }) {
               {/* Code Snippet Card */}
               <div className="rounded-xl bg-slate-900 text-slate-200 p-4 font-mono text-xs leading-relaxed shadow-inner overflow-x-auto">
                 <div className="flex items-center justify-between text-slate-400 pb-2 mb-2 border-b border-slate-800 text-[10px]">
-                  <span>// Engineer State</span>
-                  <span className="text-emerald-400">● Live</span>
+                  <span>// Developer State</span>
+                  <span className="text-emerald-400">● Live & Ready</span>
                 </div>
                 <pre className="text-slate-300">
                   <span className="text-purple-400">const</span>{' '}
                   <span className="text-blue-300">developer</span> = &#123;<br />
                   &nbsp;&nbsp;<span className="text-slate-400">name:</span> <span className="text-emerald-300">"Kaveesha Rukshan"</span>,<br />
-                  &nbsp;&nbsp;<span className="text-slate-400">passion:</span> <span className="text-emerald-300">"building products"</span>,<br />
-                  &nbsp;&nbsp;<span className="text-slate-400">focus:</span> <span className="text-emerald-300">"user experience"</span>,<br />
-                  &nbsp;&nbsp;<span className="text-slate-400">platforms:</span> [<span className="text-amber-300">"Web"</span>, <span className="text-amber-300">"Mobile"</span>]<br />
+                  &nbsp;&nbsp;<span className="text-slate-400">degree:</span> <span className="text-emerald-300">"BSc(Hons) CompSci"</span>,<br />
+                  &nbsp;&nbsp;<span className="text-slate-400">specialty:</span> <span className="text-emerald-300">"React Native & Expo"</span>,<br />
+                  &nbsp;&nbsp;<span className="text-slate-400">playStore:</span> <span className="text-amber-300">"Published Apps"</span><br />
                   &#125;;
                 </pre>
               </div>
@@ -175,7 +178,7 @@ export default function Hero({ onOpenCvModal }) {
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Sparkles className="w-4 h-4 text-amber-500" />
-                  Pixel-Perfect UI
+                  Play Store Ready
                 </span>
               </div>
             </motion.div>
@@ -186,12 +189,12 @@ export default function Hero({ onOpenCvModal }) {
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
               className="absolute -bottom-5 -left-4 bg-white p-3 rounded-xl shadow-lg border border-slate-200/80 flex items-center gap-3 hidden sm:flex"
             >
-              <div className="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold">
-                <Code2 className="w-5 h-5" />
+              <div className="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold">
+                <Smartphone className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-bold text-slate-900">Web Frontend</p>
-                <p className="text-[10px] text-slate-500">React & Next-level UI</p>
+                <p className="text-xs font-bold text-slate-900">Mobile Apps</p>
+                <p className="text-[10px] text-slate-500">React Native & Expo</p>
               </div>
             </motion.div>
 
@@ -200,12 +203,12 @@ export default function Hero({ onOpenCvModal }) {
               transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
               className="absolute -top-4 -right-4 bg-white p-3 rounded-xl shadow-lg border border-slate-200/80 flex items-center gap-3 hidden sm:flex"
             >
-              <div className="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold">
-                <Smartphone className="w-5 h-5" />
+              <div className="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold">
+                <Code2 className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-bold text-slate-900">Mobile Apps</p>
-                <p className="text-[10px] text-slate-500">React Native & Expo</p>
+                <p className="text-xs font-bold text-slate-900">Frontend Web</p>
+                <p className="text-[10px] text-slate-500">React & TypeScript</p>
               </div>
             </motion.div>
           </motion.div>
